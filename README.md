@@ -6,6 +6,12 @@ A TypeScript library for interacting with Nad Name Service (NNS) protocol using 
 
 Nad Name Service (NNS) is a web3 name service built natively on Monad. NNS maps human-readable names like 'salmo.nad' to machine-readable identifiers such as cryptocurrency addresses, metadata, and more.
 
+More information:
+
+[Website](https://nad.domains)\
+[Documents](https://docs.nad.domains)\
+[Monad](https://www.monad.xyz/)
+
 ## Table of Contents
 
 - [Features](#features)

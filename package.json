@@ -17,6 +17,8 @@
     "ethers": "^5.7.2"
   },
   "files": [
-    "lib"
+    "lib",
+    "LICENSE",
+    "README.md"
   ]
 }
