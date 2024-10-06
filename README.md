@@ -22,14 +22,6 @@ More information:
   - [Examples](#examples)
 - [API Reference](#api-reference)
   - [NNS Class](#nns-class)
-    - [getResolvedAddress](#getresolvedaddress)
-    - [getPrimaryNameForAddress](#getprimarynameforaddress)
-    - [getNameAttribute](#getnameattribute)
-    - [getNameAttributes](#getnameattributes)
-    - [getNamesOfAddress](#getnamesofaddress)
-    - [getAvatarUrl](#getavatarurl)
-    - [setNameAttribute](#setnameattribute)
-    - [setNameAttributes](#setnameattributes)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -171,7 +163,7 @@ await provider.waitForTransaction(tx2.hash!)
 
 ### NNS Class
 
-#### `getResolvedAddress(name: string): Promise<string>`
+#### `getResolvedAddress(name: string)`
 
 Resolves a given name to an address.
 
@@ -179,7 +171,7 @@ Resolves a given name to an address.
   - `name`: The name to resolve, with the `.nad` domain.
 - **Returns:** Resolved address or zero address if unregistered.
 
-#### `getPrimaryNameForAddress(address: string): Promise<string>`
+#### `getPrimaryNameForAddress(address: string)`
 
 Retrieves the primary name associated with an address.
 
@@ -187,7 +179,7 @@ Retrieves the primary name associated with an address.
   - `address`: The wallet address.
 - **Returns:** Primary name or empty string if not set.
 
-#### `getNameAttribute(name: string, key: string): Promise<string>`
+#### `getNameAttribute(name: string, key: string)`
 
 Retrieves the value of a specific attribute for a given name.
 
@@ -196,7 +188,7 @@ Retrieves the value of a specific attribute for a given name.
   - `key`: The key of the attribute.
 - **Returns:** Value of the attribute.
 
-#### `getNameAttributes(name: string, keys: string[]): Promise<NNSNameAttribute[]>`
+#### `getNameAttributes(name: string, keys: string[])`
 
 Retrieves a list of name attributes.
 
@@ -205,7 +197,7 @@ Retrieves a list of name attributes.
   - `keys`: The keys of the attributes to retrieve.
 - **Returns:** List of name attributes.
 
-#### `getNamesOfAddress(address: string): Promise<string[]>`
+#### `getNamesOfAddress(address: string)`
 
 Retrieves the names associated with a given address.
 
@@ -213,7 +205,7 @@ Retrieves the names associated with a given address.
   - `address`: The wallet address.
 - **Returns:** An array of names associated with the address.
 
-#### `getAvatarUrl(name: string): Promise<string>`
+#### `getAvatarUrl(name: string)`
 
 Retrieves the avatar URL associated with a given name.
 
@@ -221,7 +213,7 @@ Retrieves the avatar URL associated with a given name.
   - `name`: The name to retrieve the avatar URL from, with the `.nad` domain.
 - **Returns:** Avatar URL.
 
-#### `setNameAttribute(name: string, key: string, value: string): Promise<Transaction>`
+#### `setNameAttribute(name: string, key: string, value: string)`
 
 Sets a value for a specific attribute for a given name.
 
@@ -231,7 +223,7 @@ Sets a value for a specific attribute for a given name.
   - `value`: The value of the attribute to set.
 - **Returns:** Transaction object for the contract call.
 
-#### `setNameAttributes(name: string, attributes: NNSNameAttribute[]): Promise<Transaction>`
+#### `setNameAttributes(name: string, attributes: NNSNameAttribute[])`
 
 Sets multiple attributes for a given name.
 
